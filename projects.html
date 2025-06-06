@@ -39,13 +39,22 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 15px;
-      padding: 20px;
+      padding: 15px;
       transition: transform 0.3s ease, background 0.3s ease;
     }
 
     .project-card:hover {
       transform: translateY(-5px);
       background: rgba(255, 255, 255, 0.08);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .project-title {
@@ -57,6 +66,17 @@
     .project-description {
       font-size: 1rem;
       color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .project-link {
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      color: #007acc;
     }
 
     .back-link {
@@ -83,23 +103,16 @@
 
   <div class="projects-container">
     <div class="project-card">
-      <div class="project-title">🌞Análisis de la Accidentalidad Vial en Barranquilla (2018–2025)</div>
+      <img src="img/proyecto-solar-preview.png" alt="Vista previa proyecto solar" class="project-image">
+      <div class="project-title">Análisis de la Accidentalidad Vial en Barranquilla (2018–2025)</div>
       <div class="project-description">
-Análisis interactivo de la accidentalidad vial en Barranquilla desde 2018 hasta 2025, utilizando Tableau para identificar patrones, clases de accidentes, distribución de víctimas y tendencias temporales. El proyecto ofrece visualizaciones dinámicas que facilitan la exploración de datos y apoyan la toma de decisiones en seguridad vial.
+Análisis interactivo de la accidentalidad vial en Barranquilla desde 2018 hasta 2025, utilizando Tableau para identificar patrones, clases de accidentes, distribución de víctimas y tendencias temporales. 
 
-        <a href="https://github.com/tuusuario/proyecto-solar" target="_blank" style="color: #00c6ff;">Ver en GitHub</a>
       </div>
+      <a href="https://github.com/tuusuario/proyecto-solar" class="project-link" target="_blank">Ver en GitHub</a>
     </div>
 
-    <!-- Puedes duplicar este bloque para más proyectos -->
-    <!--
-    <div class="project-card">
-      <div class="project-title">📊 Otro Proyecto</div>
-      <div class="project-description">
-        Breve descripción del proyecto, herramientas usadas y objetivos de.
-      </div>
-    </div>
-    -->
+    <!-- Puedes duplicar este bloque para otros proyectos -->
   </div>
 
   <a href="index.html" class="back-link">← Volver al inicio</a>
