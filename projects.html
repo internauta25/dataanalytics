@@ -64,4 +64,44 @@
       text-align: center;
       margin-top: 40px;
       color: #00c6ff;
-      text-decoration: no
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      color: #007acc;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Mis Proyectos</h1>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-title">🌞 Potencial Solar en Colombia</div>
+      <div class="project-description">
+        Análisis interactivo del potencial fotovoltaico en los 32 departamentos de Colombia usando datos como DNI, GHI, GTI, y PVOUT.
+        <br><br>
+        <a href="https://github.com/tuusuario/proyecto-solar" target="_blank" style="color: #00c6ff;">Ver en GitHub</a>
+      </div>
+    </div>
+
+    <!-- Puedes duplicar este bloque para más proyectos -->
+    <!--
+    <div class="project-card">
+      <div class="project-title">📊 Otro Proyecto</div>
+      <div class="project-description">
+        Breve descripción del proyecto, herramientas usadas y objetivos de.
+      </div>
+    </div>
+    -->
+  </div>
+
+  <a href="index.html" class="back-link">← Volver al inicio</a>
+</body>
+</html>
